@@ -1,0 +1,25 @@
+{
+    "name": "fittie-applications/withings",
+    "authors": [
+        {
+            "name": "Stijn Buurman",
+            "email": "stijnbuurman@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "FittieApplications\\Withings\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.4",
+        "waytohealth/oauth2-withings": "^2.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FittieApplications\\Withings\\WithingsServiceProvider"
+            ]
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "name": "fittie-applications/garmin",
+    "authors": [
+        {
+            "name": "Stijn Buurman",
+            "email": "stijnbuurman@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "php": "^7.4",
+            "FittieApplications\\Garmin\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.4",
+        "dawguk/php-garmin-connect": "dev-master"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FittieApplications\\Garmin\\GarminServiceProvider"
+            ]
+        }
+    }
+}
